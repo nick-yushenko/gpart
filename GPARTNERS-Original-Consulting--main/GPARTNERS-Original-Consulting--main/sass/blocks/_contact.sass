@@ -1,0 +1,80 @@
+.contact
+    background-color: $bg
+    
+    &-block
+        padding-top: 90px
+        margin-bottom: 50px
+        .section-title.h1.quote
+            font-size: 40px 
+            line-height: 48px
+            width: 760px
+        &__content
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+        &__items
+            width: 550px
+        &__item
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 10px
+            .attribute
+                color: white
+                opacity: 0.64
+                width: 100px
+            span
+                color: white
+            a
+                width: 240px
+        &__item:last-child
+            margin-bottom: 
+        &__social
+            display: flex
+            flex-direction: row
+            width: 240px
+            justify-content: flex-start
+            .social
+                width: max-content
+        &__img
+            width: 32px
+            margin-right: 16px
+            img
+                width: 100%
+        &__btn .btn
+            padding: 20px 32px 20px 32px
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 15px
+            +reg
+@media ( max-width: 1040px )
+    .wrap
+        width: 90%
+    .contact-block__items
+        width: 450px
+@media ( max-width: 960px )
+    .section-title.h1.quote
+        width: 100%
+    .contact-block__items
+        width: 420px
+@media ( max-width: 865px )
+    .section-title.h1.quote
+        width: 100%
+    .contact-block__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .contact-block__items
+        width: 500px
+    .contact-block__btn
+        padding-top: 30px
+        .btn
+            width: 100%
+            padding: 18px 30px 18px 30px
+@media ( max-width: 600px )
+    .contact-block__items
+        width: 440px
+@media ( max-width: 460px )
+    .contact-block__items
+        width: 350px

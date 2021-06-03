@@ -1,0 +1,154 @@
+.founder
+    background-color: #000000
+    &-block
+        display: flex
+        padding-top: 100px
+        flex-direction: column
+        .section-title.h1.quote
+            font-size: 40px 
+            line-height: 48px
+            width: 760px
+        &__item
+            display: flex
+            flex-direction: row
+            padding-bottom: 40px
+            align-items: flex-start
+        &__item:last-child
+            padding-bottom: 0
+        &__image
+            width: 270px
+            height: 270px
+            margin-right: 24px
+            .name2
+                display: none
+            img
+                height: 270px
+                object-fit: cover
+                width: 100%
+                border-radius: 50%
+        &__name
+            margin-top: 25px
+            width: 660px
+            .name
+                font-size: 40px
+                line-height: 49px
+                display: block
+                margin-bottom: 24px
+                color: #ffffff
+                +medium
+        &__opinion
+            padding: 20px 24px 20px 24px
+            background-color: rgba(255, 255, 255, 0.08)
+            border-radius: 0px 24px 24px 24px
+            margin-bottom: 24px
+            p
+                font-size: 20px
+                line-height: 28px
+                color:#ffffff
+                +reg
+                opacity: 0.64
+                font-style: italic
+        &__list 
+            list-style: none
+            width: 564px
+            li
+                color: #ffffff
+                font-size: 18px
+                line-height: 26px
+                +reg
+                position: relative
+                opacity: 0.64
+                margin-left: 25px
+            li::before
+                position: absolute
+                content: ''
+                top: 10px
+                left: -25px
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                background-color: #ffffff
+@media ( max-width: 1040px )
+    .founder-block__image
+        width: 230px
+        height: 230px
+        margin-right: 0
+        img
+            width: 100%
+            height: 100%
+    .founder-block__name
+        width: calc( 100% - 230px - 24px)
+        .name
+            font-size: 35px
+            line-height: 42px
+    .founder-block__item
+        justify-content: space-between
+@media ( max-width: 960px )
+    .wrap
+        width: 90%
+@media ( max-width: 865px )
+    .section-title.h1.quote
+        width: 100%
+    .wrap
+        width: 90%
+    .founder-block__name
+        width: 100%
+        .name
+            display: none
+    .founder-block__item
+        display: flex
+        flex-direction: column
+    .founder-block__image
+        display: flex
+        flex-direction: row
+        align-items: center
+        img
+            margin-right: 20px
+        .name2
+            display: flex
+            font-size: 40px
+            line-height: 49px
+            display: block
+            margin-bottom: 24px
+            color: #ffffff
+            +medium
+            width: 100%
+@media ( max-width: 800px )
+    .section-title.h1.quote
+        width: 100% !important
+    .wrap
+        width: 90%
+    .founder-block__image
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 170px
+        height: 170px
+        img
+            margin-right: 20px
+            width: 100%
+            height: 100%
+        .name2
+            font-size: 27px
+            line-height: 32px
+@media ( max-width: 700px )
+    .founder-block__image
+        width: 150px
+        height: 150px
+        img
+            width: 100%
+            height: 100%
+@media ( max-width: 600px )
+    .founder-block__image
+        width: 120px
+        height: 120px
+        img
+            width: 100%
+            height: 100%
+    .founder-block__list
+        width: 90%
+@media ( max-width: 425px )
+    .wrap
+        width: 90%
+    .founder-block__list
+        width: 90%
